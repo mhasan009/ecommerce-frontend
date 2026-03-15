@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Navbar Block */
+
+  .navbar {
+    @apply bg-white shadow-md sticky top-0 z-50;
+  }
+
+  .navbar__container {
+    @apply container mx-auto px-4 md:px-16 lg:px-24 py-4 flex justify-between items-center;
+  }
+
+  /* Logo */
+
+  .navbar__logo {
+    @apply text-lg font-bold;
+  }
+
+  .navbar__search {
+    @apply flex-1 flex justify-center;
+  }
+
+  /* Search form */
+
+  .navbar__search-form {
+    @apply relative w-full max-w-lg;
+  }
+
+  /* Search input */
+
+  .navbar__search-input {
+    @apply w-full border rounded-md py-2 pl-3 pr-12 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  /* Search button */
+
+  .navbar__search-button {
+    @apply absolute right-1 top-1/2 -translate-y-1/2 p-2 text-gray-500 
+         hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md;
+  }
+
+  /* Actions */
+
+  .navbar__actions {
+    @apply flex items-center space-x-4;
+  }
+
+  .navbar__cart {
+    @apply relative text-lg;
+  }
+
+  .navbar__cart-count {
+    @apply absolute top-0 left-3 text-xs w-4 h-4 bg-red-600 rounded-full flex justify-center items-center text-white;
+  }
+
+  .navbar__auth-btn {
+    @apply hidden md:block text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-red-500;
+  }
+
+  .navbar__user-icon {
+    @apply block md:hidden text-lg;
+  }
+
+  /* Menu */
+
+  .navbar__menu {
+    @apply flex items-center justify-center space-x-10 py-4 text-sm font-bold;
+  }
+
+  .navbar__menu-link {
+    @apply hover:underline focus:outline-none focus:ring-2 focus:ring-red-500;
+  }
+}

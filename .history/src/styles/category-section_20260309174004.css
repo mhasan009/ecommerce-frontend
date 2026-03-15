@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ======================================
+   Category Section (BEM)
+====================================== */
+
+.category-section {
+  @apply container mx-auto;
+}
+
+.category-section__grid {
+  @apply grid grid-cols-1 sm:grid-cols-3 gap-6;
+}
+
+.category-section__card {
+  @apply relative h-64 cursor-pointer transform transition-transform duration-300 hover:scale-105 focus:scale-105 focus:outline-none;
+}
+
+.category-section__image {
+  @apply w-full h-full object-cover rounded-lg shadow-md;
+}
+
+.category-section__content {
+  @apply absolute top-20 left-12;
+}
+
+.category-section__title {
+  @apply text-xl font-bold text-black;
+}
+
+.category-section__link {
+  @apply text-gray-600;
+}
+
+/* Screen reader utility */
+
+.sr-only {
+  @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+}
