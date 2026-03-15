@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Change Address Component */
+
+.change-address {
+  @apply w-full;
+}
+
+.change-address__input {
+  @apply border p-2 w-full mb-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.change-address__actions {
+  @apply flex justify-end;
+}
+
+.change-address__button {
+  @apply text-white py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.change-address__button--cancel {
+  @apply bg-gray-500 mr-2 hover:bg-gray-600 focus:ring-gray-400;
+}
+
+.change-address__button--save {
+  @apply bg-blue-500 hover:bg-blue-600 focus:ring-blue-400;
+}

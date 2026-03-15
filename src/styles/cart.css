@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .cart {
+    @apply container mx-auto py-8 min-h-96 px-4 md:px-16 lg:px-24;
+  }
+
+  .cart__title {
+    @apply text-2xl font-semibold mb-4;
+  }
+
+  .cart__layout {
+    @apply flex flex-col md:flex-row justify-between space-x-10 mt-8;
+  }
+
+  .cart__products {
+    @apply md:w-2/3;
+  }
+
+  .cart__header {
+    @apply flex justify-between border-b items-center mb-4 text-xs font-bold;
+  }
+
+  .cart__header-meta {
+    @apply flex space-x-8;
+  }
+
+  .cart__list {
+    @apply block;
+  }
+
+  .cart__item {
+    @apply flex items-center justify-between p-3 border-b;
+  }
+
+  .cart__product {
+    @apply md:flex items-center space-x-4;
+  }
+
+  .cart__product-image {
+    @apply w-16 h-16 object-contain rounded;
+  }
+
+  .cart__product-info {
+    @apply flex-1 ml-4;
+  }
+
+  .cart__product-name {
+    @apply text-lg font-semibold;
+  }
+
+  .cart__meta {
+    @apply flex space-x-12 items-center;
+  }
+
+  .cart__quantity {
+    @apply flex items-center justify-center border;
+  }
+
+  .cart__quantity-btn {
+    @apply text-xl font-bold px-1.5 border-r;
+  }
+
+  .cart__quantity-value {
+    @apply text-xl px-2;
+  }
+
+  .cart__subtotal {
+    @apply text-base;
+  }
+
+  .cart__remove {
+    @apply text-red-500 hover:text-red-700;
+  }
+
+  .cart__summary {
+    @apply md:w-1/3 bg-white p-6 rounded-lg shadow-md border;
+  }
+
+  .cart__summary-title {
+    @apply text-sm font-semibold mb-5;
+  }
+
+  .cart__summary-row {
+    @apply flex justify-between mb-5 border-b pb-1;
+  }
+
+  .cart__shipping {
+    @apply mb-4 border-b pb-2;
+  }
+
+  .cart__shipping-address {
+    @apply ml-2;
+  }
+
+  .cart__address {
+    @apply text-xs font-bold ml-1;
+  }
+
+  .cart__change-address {
+    @apply text-blue-500 hover:underline mt-1 ml-2;
+  }
+
+  .cart__total {
+    @apply flex justify-between mb-4;
+  }
+
+  .cart__total-price {
+    @apply font-semibold;
+  }
+
+  .cart__checkout {
+    @apply w-full bg-red-600 text-white py-2 hover:bg-red-800;
+  }
+
+  .cart__empty {
+    @apply flex justify-center;
+  }
+
+  .cart__empty-image {
+    @apply h-96;
+  }
+}

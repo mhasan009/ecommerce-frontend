@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Block */
+  .shop {
+    @apply mx-auto py-12 px-4 md:px-16 lg:px-24;
+  }
+
+  /* Element */
+  .shop__title {
+    @apply text-2xl font-bold mb-6 text-center;
+  }
+
+  /* Element */
+  .shop__grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 cursor-pointer;
+  }
+}

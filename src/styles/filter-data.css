@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Block */
+  .filter-data {
+    @apply mx-auto py-12 px-4 md:px-16 lg:px-24;
+  }
+
+  /* Title */
+  .filter-data__title {
+    @apply text-2xl font-bold mb-6 text-center;
+  }
+
+  /* Product grid */
+  .filter-data__grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 cursor-pointer;
+  }
+
+  /* Empty state container */
+  .filter-data__empty {
+    @apply flex justify-center;
+  }
+
+  /* Empty image */
+  .filter-data__empty-image {
+    @apply max-w-full h-auto;
+  }
+}

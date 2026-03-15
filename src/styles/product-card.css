@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Card Block */
+  .product-card__container {
+    @apply bg-white p-4 shadow rounded relative border 
+           transform transition-transform duration-300 
+           hover:scale-105 flex flex-col;
+  }
+
+  /* Image Wrapper (keeps all images same size) */
+  .product-card__image-wrapper {
+    @apply w-full h-56 flex items-center justify-center overflow-hidden mb-4 bg-gray-50 rounded;
+  }
+
+  /* Image */
+  .product-card__image {
+    @apply max-w-full max-h-full object-contain transition-transform duration-300;
+  }
+
+  /* Optional hover zoom */
+  .product-card__container:hover .product-card__image {
+    @apply scale-110;
+  }
+
+  /* Title */
+  .product-card__title {
+    @apply text-lg font-semibold line-clamp-2 min-h-[48px];
+  }
+
+  /* Price */
+  .product-card__price {
+    @apply text-gray-600 font-medium mt-1;
+  }
+
+  /* Rating */
+  .product-card__rating {
+    @apply flex items-center mt-2;
+  }
+
+  .product-card__star {
+    @apply text-yellow-500;
+  }
+
+  /* Add to cart button */
+  .product-card__add-to-cart {
+    @apply absolute bottom-4 right-3 flex items-center justify-center 
+           w-9 h-9 bg-red-600 text-white text-sm rounded-full 
+           hover:w-32 hover:bg-red-700 transition-all duration-200 overflow-hidden;
+  }
+
+  .product-card__add-icon {
+    @apply group-hover:hidden;
+  }
+
+  .product-card__add-text {
+    @apply hidden group-hover:block whitespace-nowrap px-2;
+  }
+}
