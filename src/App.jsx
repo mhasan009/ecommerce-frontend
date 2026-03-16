@@ -14,7 +14,7 @@ import ProductDetail from "./pages/ProductDetail";
 function App() {
   const [order, setOrder] = useState(null);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ecommerce-frontend">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
